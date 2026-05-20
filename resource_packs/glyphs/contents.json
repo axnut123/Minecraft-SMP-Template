@@ -1,0 +1,14 @@
+{
+   "content" : [
+      {
+         "path" : "font/glyph_E0.png"
+      },
+      {
+         "path" : "font/glyph_E1.png"
+      },
+      {
+         "path" : "manifest.json"
+      }
+   ],
+   "version" : 1
+}

@@ -1,0 +1,16 @@
+{
+  "packs": [
+    {
+      "can_be_redownloaded": true,
+      "name": "Minecraft Essentials v2.20.3 (RP)",
+      "uuid": "152fe5a4-9a44-461a-9dc4-187188aed939",
+      "version": [2, 20, 3]
+    },
+    {
+      "can_be_redownloaded": true,
+      "name": "glyph pack",
+      "uuid": "7ae8cb9a-7c62-4aef-9a64-3b0e78b9eb73",
+      "version": [1,0,0]
+    }
+  ]
+}

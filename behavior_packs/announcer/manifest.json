@@ -1,0 +1,34 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "EasyAnnouncer",
+    "description": "EasyAnnouncer by:Gyk_Zty",
+    "uuid": "7ae8cb9a-7b62-4aef-9a64-3b0e78b9eb73",
+    "version": [ 1, 0, 0 ],
+    "min_engine_version": [ 1, 21, 50 ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "7ae8cb9a-7b62-4aee-9b44-3b0e78b9eb73",
+      "version": [ 1, 0, 0 ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "4031808d-98fc-49b7-811f-c739abb0b34b",
+      "version": [ 1, 0, 0 ],
+      "entry": "scripts/Main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.5.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ]
+}

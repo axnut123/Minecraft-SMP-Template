@@ -1,0 +1,20 @@
+{
+    
+    "format_version": 1,
+    "header": {
+        "uuid": "7ae8cb9a-7c62-4aef-9a64-3b0e78b9eb73",
+        "name": "glyph pack",
+        "description": "Glyph resource pack",
+        "version": [1, 0, 0],
+        "author": "Gyk_Zty"
+    },
+    "modules": [
+        {
+            "description":  "",
+            "type": "resources",
+            "uuid": "8f4bb263-30b6-4f2e-b07e-5c52d9e114fd",
+            "version": [9, 0, 0]
+        }
+    ],
+	"default_locale": "en_US"
+}

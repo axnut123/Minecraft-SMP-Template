@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "interval": 120,
+  "announcements": [
+    "§fJoin our §bTelegrаm§f group chat for our friendly community! §ehttps://t.me/axngrp",
+    "§fJoin our §bTelеgram§f channel for updates and announcements! §ehttps://t.me/axsmpgrp",
+    "§fDo not know how tо issue command? Use §b!help§f to get a list of available commands!",
+    "§fNot sure how tо protect your base? Use §b!land§f to learn about protection commands and tips!"
+  ]
+}
