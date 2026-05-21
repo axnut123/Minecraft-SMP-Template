@@ -25,10 +25,32 @@ You can build your own SMP server using this template. It includes a basic setup
 - C.Moderator: Access to less moderation commands and permissions, cannot edit other players' rank. Do not include vanilla operator permissions. This rank is for the community moderators.(internal name: moder)
 - OP: Access to some simple commands. And do not have access to moderator commands. This rank is a preset for rank purchasing.(internal name: op)
 - Premium: a premium rank. Nothing to explain.(internal name: premium)
-- ati: a user custom rank. No permissions.
+- ati: an user custom rank. No permissions.
 - Default: the default rank for new players. No permissions.
 
 **Use /tag <player> add <rank> to grant a player a rank, and /tag <player> remove <rank> to remove a rank from a player.**
+
+## Additional custom functions:
+- /function v1 - turn on vanish mode.
+- /function v2 - turn off vanish mode.
+- /function godon - turn on godmode.
+- /function godoff - turn off godmode.
+- /function setsb - init scoreboard.
+- /function main - main loop of main function.
+- /tag <player> add killit - kill a player, even in creative mode.
+- /tag <player> add kickit - kick a player forever.
+- /tag <player> add clearit - clear a player's inventory.
+- /tag <player> add redstoner - allow a player to use all redstone items.
+- /tag <player> add admin - grant a player admin permissions.
+- /scoreboard players add <player> add warns <int(1-2)> - warn a player.
+- /scoreboard players add <player> set warns <int(0)> - unwarn a player.
+- /scriptevent sla:setlore <lore> - set the lore of an item in the player's main hand to the specified lore.
+- /scriptevent sla:clearlore - clear the lore of an item in the player's main hand.
+
+## Notes:
+- Turn on online-mode.
+- Use https.
+- Do not grant any other players admin and operator permissions.
 
 ## You are allowed to:
 - Modify the server as you like, including but not limited to: changing the spawn area, adding new features, customizing the configurations, etc.
@@ -48,3 +70,5 @@ You can build your own SMP server using this template. It includes a basic setup
 - Gyk Zty: Dev.
 - Alex_Nute: Same person as Gyk Zty, but with a different name.
 - axnut123: Same person as Gyk Zty, my github user name.
+
+**Thank you for choosing my template. Meow!**
