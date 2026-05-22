@@ -3,17 +3,20 @@ gamemode survival @a[tag=creativemode,tag=killit]
 kill @a[tag=killit]
 tag @a[tag=!killit] add announce
 tellraw @a[tag=killit] {"rawtext":[{"text":"§cYou were killed by §4moderator or console."}]}
+execute as @a[tag=killit] run tellraw @a[tag=!killit] {"rawtext":[{"text":"§cPlayer §4"},{"selector":"@s"},{"text":"§c was eliminated by §4LEGION."}]}
 tag @a[tag=announce] remove announce
 gamemode creative @a[tag=creativemode,tag=killit]
 tag @a[tag=creativemode,tag=killit] remove creativemode
 tag @a[tag=killit] remove killit
 
 #kicker
+execute as @a[tag=kickit] run tellraw @a[tag=!kickit] {"rawtext":[{"text":"§cPlayer §4"},{"selector":"@s"},{"text":"§c was swallowed by the VOID!"}]} 
 tellraw @a[tag=kickit] {"rawtext":[{"text":"§cYou were kicked by §4moderator or console."}]}
-kick @a[tag=kickit] You were kicked by moderator or console. There is no way to cancel your punishment.
+#kick @a[tag=kickit] "You were kicked by moderator or console. There is no way to cancel your punishment."
 
 #clear
 clear @a[tag=clearit]
+execute as @a[tag=clearit] run tellraw @a[tag=!clearit] {"rawtext":[{"text":"§cPlayer §4"},{"selector":"@s"},{"text":"§c's items were swallowed by the VOID!"}]} 
 tellraw @a[tag=clearit] {"rawtext":[{"text":"§cItems cleared by moderator or console!"}]}
 tag @a[tag=clearit] remove clearit
 

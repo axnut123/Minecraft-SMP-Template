@@ -49,6 +49,7 @@ You can build your own SMP server using this template. It includes a basic setup
 - /tag <player> add clearit - clear a player's inventory.
 - /tag <player> add redstoner - allow a player to use all redstone items.
 - /tag <player> add admin - grant a player admin permissions.
+- /tag <player> add tntallow - allow a player to use tnt.
 - /scoreboard players add <player> add warns <int(1-2)> - warn a player.
 - /scoreboard players add <player> set warns <int(0)> - unwarn a player.
 - /scriptevent sla:setlore <lore> - set the lore of an item in the player's main hand to the specified lore.
