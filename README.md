@@ -43,13 +43,20 @@ You can build your own SMP server using this template. It includes a basic setup
 - /function create_ltcp - create a charged creeper with white list name.
 - /function create_pt - create a phantom with white list name.
 - /function removeentity - remove nearby armor stands, creepers and phantoms that have white list names (range = 1).
+- /function wipeout - kill all entities except players, and clear all dropped items and xp orbs.
+- /function itemVFXinit - initialize the item VFX system. (You need to run this command at least once to use the item VFX system.)
+- /function itemVFXon - turn on item VFX. (You need to run this command every time you want to turn on item VFX.)
+- /function itemVFXoff - turn off item VFX. (You need to run this command every time you want to turn off item VFX.)
+- /function itemVFXdel - delete the item VFX scoreboard objective. (You need to run this command if you want to completely remove the item VFX system, but it's not recommended.)
 - /function mainLoop - main loop of main function. (No need to recall manually, it will be automatically called every tick.)
 - /tag <player> add killit - kill a player, even in creative mode.
 - /tag <player> add kickit - kick a player forever.
 - /tag <player> add clearit - clear a player's inventory.
-- /tag <player> add redstoner - allow a player to use all redstone items.
-- /tag <player> add admin - grant a player admin permissions.
-- /tag <player> add tntallow - allow a player to use tnt.
+- /tag <player> add/remove redstoner - allow a player to use all redstone items. or deny
+- /tag <player> add/remove admin - grant a player admin permissions. or revoke
+- /tag <player> add/remove tntallow - allow a player to use tnt. or deny
+- /tag <player> add/remove freezer - freeze a player, they cannot move, jump, sneak or use any items. or unfreeze
+- /tag <player> add/remove particles - allow a player to use particles. or deny
 - /scoreboard players add <player> add warns <int(1-2)> - warn a player.
 - /scoreboard players add <player> set warns <int(0)> - unwarn a player.
 - /scriptevent sla:setlore <lore> - set the lore of an item in the player's main hand to the specified lore.
