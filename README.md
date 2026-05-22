@@ -20,23 +20,30 @@ You can build your own SMP server using this template. It includes a basic setup
 
 ## Permission groups:
 - G.Owner: Full access to all commands and permissions.(internal name: admin)
+- Staff: Access to most commands and permissions, including most owner-only commands. Do not include vanilla operator permissions.(internal name: staff)
 - G.Admin: Access to most commands and permissions, excluding owner-only commands. Do not include vanilla operator permissions.(internal name: gadmin)
-- G.Moderator: Access to moderation commands and permissions, cannot edit other players' rank. Do not include vanilla operator permissions. We recommend you to grant this rank to staff.(internal name: moderator)
+- G.Moderator: Access to moderation commands and permissions, cannot edit other players' rank. Do not include vanilla operator permissions. We recommend you to grant this rank to trusted moderators.(internal name: moderator)
 - C.Moderator: Access to less moderation commands and permissions, cannot edit other players' rank. Do not include vanilla operator permissions. This rank is for the community moderators.(internal name: moder)
 - OP: Access to some simple commands. And do not have access to moderator commands. This rank is a preset for rank purchasing.(internal name: op)
 - Premium: a premium rank. Nothing to explain.(internal name: premium)
+- Vip: a vip rank. Nothing to explain.(internal name: vip)
 - ati: an user custom rank. No permissions.
 - Default: the default rank for new players. No permissions.
 
 **Use /tag <player> add <rank> to grant a player a rank, and /tag <player> remove <rank> to remove a rank from a player.**
 
 ## Additional custom functions:
-- /function v1 - turn on vanish mode.
-- /function v2 - turn off vanish mode.
+- /function vanishon - turn on vanish mode.
+- /function vanishoff - turn off vanish mode.
 - /function godon - turn on godmode.
 - /function godoff - turn off godmode.
 - /function setsb - init scoreboard.
-- /function main - main loop of main function.
+- /function create_as - create an armor stand with white list name.
+- /function create_cp - create a creeper with white list name.
+- /function create_ltcp - create a charged creeper with white list name.
+- /function create_pt - create a phantom with white list name.
+- /function removeentity - remove nearby armor stands, creepers and phantoms that have white list names (range = 1).
+- /function mainLoop - main loop of main function. (No need to recall manually, it will be automatically called every tick.)
 - /tag <player> add killit - kill a player, even in creative mode.
 - /tag <player> add kickit - kick a player forever.
 - /tag <player> add clearit - clear a player's inventory.
@@ -50,7 +57,7 @@ You can build your own SMP server using this template. It includes a basic setup
 ## Notes:
 - Turn on online-mode.
 - Use https.
-- Do not grant any other players admin and operator permissions.
+- Do not grant any other players admin, staff and operator permissions.
 
 ## You are allowed to:
 - Modify the server as you like, including but not limited to: changing the spawn area, adding new features, customizing the configurations, etc.

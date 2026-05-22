@@ -4,7 +4,7 @@
         "description": "Essentials main loop by Gyk_Zty.",
         "name": "Main loop of essentials",
         "uuid": "6a513b98-780d-45fd-9c53-070e8867d7ed",
-        "version": [ 1, 0, 0 ],
+        "version": [ 1, 0, 1 ],
         "min_engine_version": [ 1, 21, 23 ]
     },
     "modules": [
