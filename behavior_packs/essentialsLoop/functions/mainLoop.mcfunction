@@ -12,7 +12,7 @@ tag @a[tag=killit] remove killit
 #kicker
 execute as @a[tag=kickit] run tellraw @a[tag=!kickit] {"rawtext":[{"text":"§cPlayer §4"},{"selector":"@s"},{"text":"§c was swallowed by the VOID!"}]} 
 tellraw @a[tag=kickit] {"rawtext":[{"text":"§cYou were kicked by §4moderator or console."}]}
-#kick @a[tag=kickit] "You were kicked by moderator or console. There is no way to cancel your punishment."
+kick @a[tag=kickit] "You were kicked by moderator or console. There is no way to cancel your punishment."
 
 #clear
 clear @a[tag=clearit]
