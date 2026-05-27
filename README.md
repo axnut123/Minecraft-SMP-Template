@@ -13,9 +13,9 @@ You can build your own SMP server using this template. It includes a basic setup
 ## How to use:
 1. Download the template and extract it to your desired location.
 2. Open the `server.properties` file and customize the settings according to your preferences (e.g., server name, game mode, difficulty, etc.).
-3. Once you enter the game, use /tag @s add admin and /op <player> to grant yourself owner rank.
+3. Once you enter the game, use /tag @s add admin and /op player to grant yourself owner rank.
 4. Read the boards that are placed around the spawn area to learn about the server.
-5. Replacing all of the texts such as <NameHere> to your desired name, and changing the spawn area to your liking.
+5. Replacing all of the texts such as NameHere to your desired name, and changing the spawn area to your liking.
 6. Any other customizations you want to make, such as adding new features, changing the configurations, etc.
 
 ## Permission groups:
@@ -30,7 +30,7 @@ You can build your own SMP server using this template. It includes a basic setup
 - ati: an user custom rank. No permissions.
 - Default: the default rank for new players. No permissions.
 
-**Use /tag <player> add <rank> to grant a player a rank, and /tag <player> remove <rank> to remove a rank from a player.**
+**Use /tag player add rank to grant a player a rank, and /tag player remove rank to remove a rank from a player.**
 
 ## Additional custom functions:
 - /function vanishon - turn on vanish mode.
@@ -38,6 +38,9 @@ You can build your own SMP server using this template. It includes a basic setup
 - /function godon - turn on godmode.
 - /function godoff - turn off godmode.
 - /function setsb - init scoreboard.
+- /function wipeitem - kill all dropped items in the world.
+- /function heal - heal yourself to full health.
+- /function feed - feed yourself to full hunger.
 - /function create_as - create an armor stand with white list name.
 - /function create_cp - create a creeper with white list name.
 - /function create_ltcp - create a charged creeper with white list name.
@@ -49,17 +52,18 @@ You can build your own SMP server using this template. It includes a basic setup
 - /function itemVFXoff - turn off item VFX. (You need to run this command every time you want to turn off item VFX.)
 - /function itemVFXdel - delete the item VFX scoreboard objective. (You need to run this command if you want to completely remove the item VFX system, but it's not recommended.)
 - /function mainLoop - main loop of main function. (No need to recall manually, it will be automatically called every tick.)
-- /tag <player> add killit - kill a player, even in creative mode.
-- /tag <player> add kickit - kick a player forever.
-- /tag <player> add clearit - clear a player's inventory.
-- /tag <player> add/remove redstoner - allow a player to use all redstone items. or deny
-- /tag <player> add/remove admin - grant a player admin permissions. or revoke
-- /tag <player> add/remove tntallow - allow a player to use tnt. or deny
-- /tag <player> add/remove freezer - freeze a player, they cannot move, jump, sneak or use any items. or unfreeze
-- /tag <player> add/remove particles - allow a player to use particles. or deny
-- /scoreboard players add <player> add warns <int(1-2)> - warn a player.
-- /scoreboard players add <player> set warns <int(0)> - unwarn a player.
-- /scriptevent sla:setlore <lore> - set the lore of an item in the player's main hand to the specified lore.
+- /tag player add killit - kill a player, even in creative mode.
+- /tag player add kickit - kick a player forever.
+- /tag player add clearit - clear a player's inventory.
+- /tag player add/remove redstoner - allow a player to use all redstone items. or deny
+- /tag player add/remove admin - grant a player admin permissions. or revoke
+- /tag player add/remove shock - shock a player with lightning.
+- /tag player add/remove tntallow - allow a player to use tnt. or deny
+- /tag player add/remove freezer - freeze a player, they cannot move, jump, sneak or use any items. or unfreeze
+- /tag player add/remove particles - allow a player to use particles. or deny
+- /scoreboard players add player add warns int(1-2) - warn a player.
+- /scoreboard players add player set warns int(0) - unwarn a player.
+- /scriptevent sla:setlore lore - set the lore of an item in the player's main hand to the specified lore.
 - /scriptevent sla:clearlore - clear the lore of an item in the player's main hand.
 
 ## Notes:

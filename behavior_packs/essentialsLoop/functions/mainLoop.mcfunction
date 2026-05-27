@@ -32,6 +32,9 @@ effect @a[tag=vanish] weakness infinite 255 true
 effect @a[tag=godmode] resistance infinite 255 true
 effect @a[tag=godmode] instant_health infinite 255 true
 effect @a[tag=godmode] weakness infinite 255 true
+execute at @a[tag=shock] run summon lightning_bolt ~ ~ ~
+tag @a[tag=shock] remove shock
+
 
 #redstone restriction
 clear @a[tag=!redstoner] redstone
