@@ -1,6 +1,7 @@
 tag @a[m=creative,tag=killit] add creativemode
 gamemode survival @a[tag=creativemode,tag=killit]
 execute at @a[tag=killit] run summon lightning_bolt ~ ~ ~
+damage @a[tag=killit] 99999 lightning
 gamerule keepInventory false
 kill @a[tag=killit]
 gamerule keepInventory true
@@ -34,7 +35,8 @@ effect @a[tag=godmode] instant_health infinite 255 true
 effect @a[tag=godmode] weakness infinite 255 true
 execute at @a[tag=shock] run summon lightning_bolt ~ ~ ~
 tag @a[tag=shock] remove shock
-
+execute as @a[tag=launch] run effect @s levitation 1 150 true
+tag @a[tag=launch] remove launch
 
 #redstone restriction
 clear @a[tag=!redstoner] redstone

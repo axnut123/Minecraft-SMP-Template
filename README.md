@@ -61,6 +61,7 @@ You can build your own SMP server using this template. It includes a basic setup
 - /tag player add/remove tntallow - allow a player to use tnt. or deny
 - /tag player add/remove freezer - freeze a player, they cannot move, jump, sneak or use any items. or unfreeze
 - /tag player add/remove particles - allow a player to use particles. or deny
+- /tag player add/remove launch - launch a player into the sky.
 - /scoreboard players add player add warns int(1-2) - warn a player.
 - /scoreboard players add player set warns int(0) - unwarn a player.
 - /scriptevent sla:setlore lore - set the lore of an item in the player's main hand to the specified lore.
