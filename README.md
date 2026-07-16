@@ -41,12 +41,15 @@ You can build your own SMP server using this template. It includes a basic setup
 - /function wipeitem - kill all dropped items in the world.
 - /function heal - heal yourself to full health.
 - /function feed - feed yourself to full hunger.
+- /function kill - kill yourself.
+- /function kick - kick yourself.
 - /function create_as - create an armor stand with white list name.
 - /function create_cp - create a creeper with white list name.
 - /function create_ltcp - create a charged creeper with white list name.
 - /function create_pt - create a phantom with white list name.
 - /function removeentity - remove nearby armor stands, creepers and phantoms that have white list names (range = 1).
 - /function wipeout - kill all entities except players, and clear all dropped items and xp orbs.
+- /function wipeitem - wipe item and xp orbs.
 - /function itemVFXinit - initialize the item VFX system. (You need to run this command at least once to use the item VFX system.)
 - /function itemVFXon - turn on item VFX. (You need to run this command every time you want to turn on item VFX.)
 - /function itemVFXoff - turn off item VFX. (You need to run this command every time you want to turn off item VFX.)

@@ -1,8 +1,8 @@
 tag @a[m=creative,tag=killit] add creativemode
 gamemode survival @a[tag=creativemode,tag=killit]
-execute at @a[tag=killit] run summon lightning_bolt ~ ~ ~
+execute at @a[tag=killit] run summon lightning_bolt ~ ~2 ~
+execute if entity @a[tag=killit] run gamerule keepInventory false
 damage @a[tag=killit] 99999 lightning
-gamerule keepInventory false
 kill @a[tag=killit]
 gamerule keepInventory true
 tag @a[tag=!killit] add announce
@@ -33,10 +33,10 @@ effect @a[tag=vanish] weakness infinite 255 true
 effect @a[tag=godmode] resistance infinite 255 true
 effect @a[tag=godmode] instant_health infinite 255 true
 effect @a[tag=godmode] weakness infinite 255 true
-execute at @a[tag=shock] run summon lightning_bolt ~ ~ ~
-tag @a[tag=shock] remove shock
-execute as @a[tag=launch] run effect @s levitation 1 150 true
-tag @a[tag=launch] remove launch
+execute at @e[tag=shock] run summon lightning_bolt ~ ~ ~
+tag @e[tag=shock] remove shock
+execute as @e[tag=launch] run effect @s levitation 1 150 true
+tag @e[tag=launch] remove launch
 
 #redstone restriction
 clear @a[tag=!redstoner] redstone
@@ -102,8 +102,8 @@ inputpermission set @a[tag=!freezer] movement enabled
 inputpermission set @a[tag=!freezer] sneak enabled
 
 #particles
-execute at @a[tag=particles] run particle minecraft:villager_happy ~~~
-execute at @a[tag=particles] run particle minecraft:end_chest ~~~
+execute at @e[tag=particles] run particle minecraft:villager_happy ~~~
+execute at @e[tag=particles] run particle minecraft:end_chest ~~~
 
 #VFX(Particles for items, arrows)
 effect @e[type=armor_stand,tag=itemVFX] invisibility infinite 1 true
@@ -112,3 +112,11 @@ effect @e[type=armor_stand,tag=itemVFX] instant_health infinite 255 true
 execute at @e[type=armor_stand,tag=itemVFX,scores={itemVFX=1}] run execute at @e[type=item] run particle minecraft:basic_flame_particle ~~~
 execute at @e[type=armor_stand,tag=itemVFX,scores={itemVFX=1}] run execute at @e[type=arrow] run particle minecraft:blue_flame_particle ~~~
 execute at @e[type=armor_stand,tag=itemVFX,scores={itemVFX=1}] run execute at @e[type=thrown_trident] run particle minecraft:lava_drip_particle ~~~
+
+#WorldEdit
+execute as @e[type=armor_stand,tag=pos1] run effect @s invisibility infinite 1 true
+execute as @e[type=armor_stand,tag=pos1] run effect @s resistance infinite 255 true
+execute as @e[type=armor_stand,tag=pos1] run effect @s instant_health infinite 255 true
+execute as @e[type=armor_stand,tag=pos2] run effect @s invisibility infinite 1 true
+execute as @e[type=armor_stand,tag=pos2] run effect @s resistance infinite 255 true
+execute as @e[type=armor_stand,tag=pos2] run effect @s instant_health infinite 255 true

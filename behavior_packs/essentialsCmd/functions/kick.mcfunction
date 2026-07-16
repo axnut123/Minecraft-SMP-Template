@@ -1,0 +1,1 @@
+kick @s "Kicked yourself from the server."
